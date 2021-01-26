@@ -1,23 +1,53 @@
 .hero-services {
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Texting-amico.svg");
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  /* Place text in the middle of the image */
-  .hero-services-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Texting-amico.svg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
-  .content-service{
-      margin: 100px;
-  }
+/* Place text in the middle of the image */
+
+.hero-services-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.flex-around{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.content-service {
+  margin: 100px;
+}
+
+.margin-setter{
+  margin-bottom: 32px;
+}
+
+.special-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.special-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+
+.card-container {
+  padding: 2px 16px;
+  padding-bottom: 32px;
+}
+
