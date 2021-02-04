@@ -72,7 +72,9 @@
       <div class="container header">
 
         <!-- Navbar Brand-->
-        <img src="assets/images/hireslogo.png" alt="BongaTech" class="navbar-brand" style="width: 120px;">
+        <a href="index.html">
+          <img src="assets/images/hireslogo.png" alt="BongaTech" class="navbar-brand" style="width: 120px;">'
+        </a>
         <!-- <a class="navbar-brand" href="index.html" style="font-weight: 700;"></a> -->
 
         <!-- Navbar Items -->
@@ -162,10 +164,11 @@
                       <div class="card-container">
                         <div class="special-card-header">
                           <h5>Shared USSD</h5>
+                          <hr class="horizontal-line">
                         </div>
                         <p>Used by multiple
                           businesses or
-                          brands</p>
+                          brands.</p>
                       </div>
                     </div>
                   </div>
@@ -175,14 +178,14 @@
                       <div class="card-container">
                         <div class="special-card-header">
                           <h5>Dedicated USSD</h5>
+                          <hr class="horizontal-line">
                         </div>
-                        <p>Used only by a
-                          single business or
-                          brand.</p>
+                        <p>Used by multiple
+                          businesses or
+                          brands.</p>
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
 
@@ -364,7 +367,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-12 p-3 text-center text-lg-center">
-            <p>Copyright © 2020 All Rights Reserved.</p>
+            <p>Copyright © <span id="copyright-year">2020</span>. All Rights Reserved.</p>
           </div>
         </div>
       </div>
@@ -499,6 +502,9 @@
       }
     });
   </script>
+  <script>
+    document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+</script>
 </body>
 
 </html>

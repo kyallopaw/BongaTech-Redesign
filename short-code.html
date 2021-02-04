@@ -72,7 +72,9 @@
       <div class="container header">
 
         <!-- Navbar Brand-->
-        <img src="assets/images/hireslogo.png" alt="BongaTech" class="navbar-brand" style="width: 120px;">
+        <a href="index.html">
+          <img src="assets/images/hireslogo.png" alt="BongaTech" class="navbar-brand" style="width: 120px;">'
+        </a>
         <!-- <a class="navbar-brand" href="index.html" style="font-weight: 700;"></a> -->
 
         <!-- Navbar Items -->
@@ -91,7 +93,7 @@
               <li class="nav-item dropdown"> <a class="nav-link" href="mpesa-integration.html"> M-Pesa Integration<i
                     class="icon-credit-card"></i></a> </li>
               <li class="nav-item dropdown"> <a class="nav-link" href="short-code.html">Short Codes <i class="icon-key"></i></a></li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="#">SMS Integration<i class="icon-phone"></i></a>
+              <li class="nav-item dropdown"> <a class="nav-link" href="whatsapp-business.html">WhatsApp Business<i class="icon-phone"></i></a>
               </li>
               <li class="nav-item dropdown"> <a class="nav-link" href="ussd.html">USSD<i class="icon-screen-smartphone"></i></a>
               </li>
@@ -301,7 +303,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-12 p-3 text-center text-lg-center">
-            <p>Copyright © 2020 All Rights Reserved.</p>
+            <p>Copyright © <span id="copyright-year">2020</span>. All Rights Reserved.</p>
           </div>
         </div>
       </div>
@@ -436,6 +438,9 @@
       }
     });
   </script>
+  <script>
+    document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+</script>
 </body>
 
 </html>

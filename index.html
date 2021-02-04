@@ -51,7 +51,7 @@
       --footer-bg-color: #000000;
     }
 
-    .scrolldown-wrapper{
+    .scrolldown-wrapper {
       display: none;
     }
   </style>
@@ -70,7 +70,9 @@
       <div class="container header">
 
         <!-- Navbar Brand-->
-        <img src="assets/images/hireslogo.png" alt="BongaTech" class="navbar-brand" style="width: 120px;">
+        <a href="index.html">
+          <img src="assets/images/hireslogo.png" alt="BongaTech" class="navbar-brand" style="width: 120px;">'
+        </a>
         <!-- <a class="navbar-brand" href="index.html" style="font-weight: 700;"></a> -->
 
         <!-- Navbar Items -->
@@ -84,14 +86,16 @@
                 class="icon-arrow-down"></i></a>
             <ul class="dropdown-menu">
 
-              <li class="nav-item dropdown"> <a class="nav-link" href="#"> Bulk SMS <i
+              <li class="nav-item dropdown"> <a class="nav-link" href="bulk-sms.html"> Bulk SMS <i
                     class="icon-screen-desktop"></i></a></li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="#"> M-Pesa Integration<i
+              <li class="nav-item dropdown"> <a class="nav-link" href="mpesa-integration.html"> M-Pesa Integration<i
                     class="icon-credit-card"></i></a> </li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="#">Short Codes <i class="icon-key"></i></a></li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="#">SMS Integration<i class="icon-phone"></i></a>
+              <li class="nav-item dropdown"> <a class="nav-link" href="short-code.html">Short Codes <i
+                    class="icon-key"></i></a></li>
+              <li class="nav-item dropdown"> <a class="nav-link" href="">SMS Integration<i class="icon-phone"></i></a>
               </li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="#">USSD<i class="icon-screen-smartphone"></i></a>
+              <li class="nav-item dropdown"> <a class="nav-link" href="ussd.html">USSD<i
+                    class="icon-screen-smartphone"></i></a>
               </li>
               <li class="nav-item dropdown"> <a class="nav-link" href="#">Surveys<i class="icon-notebook"></i></a></li>
               <li class="nav-item dropdown"> <a class="nav-link" href="#">Loyalty Programs<i class="icon-badge"></i></a>
@@ -184,8 +188,8 @@
             <h4>Bulk SMS</h4>
             <p>Deliver messages from your computer or server quickly and easily, through the world’s largest SMS
               messaging network</p>
-            <a href="" data-toggle="modal" data-target="#modalBulksms" onclick="scrollMagic()"><span>Learn More</span> <i
-                class="btn-icon icon-plus"></i></a>
+            <a href="" data-toggle="modal" data-target="#modalBulksms" onclick="scrollMagic()"><span>Learn More</span>
+              <i class="btn-icon icon-plus"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
@@ -194,8 +198,8 @@
             <h4>M-Banking, Bulk Payments</h4>
             <br>
             <p>Perform surveys, campaigns and mobile banking transactions easily on your phone.</p>
-            <a href="" data-toggle="modal" data-target="#modalBanking" onclick="scrollMagic()"><span>Learn More</span> <i
-                class="btn-icon icon-arrow-right-circle"></i></a>
+            <a href="" data-toggle="modal" data-target="#modalBanking" onclick="scrollMagic()"><span>Learn More</span>
+              <i class="btn-icon icon-arrow-right-circle"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
@@ -204,18 +208,19 @@
             <h4>Short Codes</h4>
             <br>
             <p>Send a two-way message to your clients through our unique short code application.</p>
-            <a href="" data-toggle="modal" data-target="#modalShortcodes" onclick="scrollMagic()"><span>Learn More</span> <i
-                class="btn-icon icon-arrow-right-circle"></i></a>
+            <a href="" data-toggle="modal" data-target="#modalShortcodes" onclick="scrollMagic()"><span>Learn
+                More</span> <i class="btn-icon icon-arrow-right-circle"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
           <div class="card">
-            <i class="icon icon-puzzle"></i>
-            <h4>SMS Integration</h4>
-            <p>Solutions on different platforms and on a variety of custom legacy and ERP systems within organizations.
+            <i class="icon icon-badge"></i>
+            <h4>WhatApp Business</h4>
+            <p>Better communication for customer engagement, increased trust, and long-term customer relationships.
             </p>
-            <a href="" data-toggle="modal" data-target="#modalBanking" onclick="scrollMagic()"><span>Learn More</span> <i
-                class="btn-icon icon-arrow-right-circle"></i></a>
+            <a href="" data-toggle="modal" data-target="#modalWhatsAppBusiness" onclick="scrollMagic()"><span>Learn
+                More</span>
+              <i class="btn-icon icon-arrow-right-circle"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
@@ -224,8 +229,8 @@
             <h4>USSD Interactive</h4>
             <br>
             <p>A standard session-based GSM technology which supports longer message content.</p>
-            <a href="" data-toggle="modal" data-target="#modalBanking" onclick="scrollMagic()"><span>Learn More</span> <i
-                class="btn-icon icon-arrow-right-circle"></i></a>
+            <a href="" data-toggle="modal" data-target="#modalUssd" onclick="scrollMagic()"><span>Learn More</span>
+              <i class="btn-icon icon-arrow-right-circle"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
@@ -233,9 +238,9 @@
             <i class="icon icon-user"></i>
             <h4>Surveys</h4>
             <br>
-            <p>Make Multiple payments at once from your prefered list </p>
-            <a href="" data-toggle="modal" data-target="#modalBulksms" onclick="scrollMagic()"><span>Learn More</span> <i
-                class="btn-icon icon-arrow-right-circle"></i></a>
+            <p>Improve your service delivery and get real-time insights.</p>
+            <a href="" data-toggle="modal" data-target="#modalSurvey" onclick="scrollMagic()"><span>Learn More</span>
+              <i class="btn-icon icon-arrow-right-circle"></i></a>
           </div>
         </div>
       </div>
@@ -309,6 +314,12 @@
 
             </p>
           </div>
+          <div class="modal-footer">
+            <a href="bulk-sms.html" data-aos="" data-aos-delay="1200"
+              onclick="window.location.href='mpesa-integration.html'"
+              class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Visit Bulk SMS page<i
+                class="icon-arrow-right-circle"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -378,6 +389,11 @@
               <button type="button" class="btn btn-primary">Save changes</button>
             </div> -->
           </div>
+          <div class="modal-footer">
+            <a href="bulk-sms.html" data-aos="" data-aos-delay="1200" onclick="window.location.href='bulk-sms.html'"
+              class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Visit Bulk SMS page<i
+                class="icon-arrow-right-circle"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -431,10 +447,222 @@
               <br>
 
             </p>
-            <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div> -->
+          </div>
+          <div class="modal-footer">
+            <a href="short-code.html" data-aos="" data-aos-delay="1200" onclick="window.location.href='short-code.html'"
+              class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Visit short-code page<i
+                class="icon-arrow-right-circle"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal, Survey start-->
+
+    <div class="modal fade" id="modalSurvey" tabindex="-1" role="dialog" aria-labelledby="surveyModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-custom" role="document">
+        <div class="modal-content">
+          <div class="modal-image">
+            <div class="scrolldown-wrapper">
+              <div class="scrolldown">
+                <svg height="30" width="10">
+                  <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                  <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+              </div>
+              <div class="scrolldown-words">
+                Scroll Down
+              </div>
+            </div>
+            <img src="assets/images/Customer Survey-amico.svg" class="" alt="">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="icon-close"></i></span>
+            </button>
+          </div>
+          <div class="modal-header">
+            <h2 class="modal-title" id="surveyModalLongTitle">Survey</h2>
+          </div>
+
+          <div class="modal-body">
+            <p style="font-weight: 500; line-height: 32px;">
+
+              Improve your service delivery by running surveys and get
+              real-time insights. Get reviews about your products or
+              services and make <strong>data-driven</strong> decisions. Run <strong>NPS surveys</strong>
+              and get to know how your services affect your bottom-line.
+              <br>
+
+              <br>
+
+            </p>
+          </div>
+          <!-- <div class="modal-footer">
+            <a href="whatsapp-business.html" data-aos="" data-aos-delay="1200"
+                      class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Visit M-Pesa and Survey page<i
+                        class="icon-arrow-right-circle"></i></a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+
+    <!--Modal, USSD start-->
+
+    <div class="modal fade" id="modalUssd" tabindex="-1" role="dialog" aria-labelledby="ussdModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-custom" role="document">
+        <div class="modal-content">
+          <div class="modal-image">
+            <div class="scrolldown-wrapper">
+              <div class="scrolldown">
+                <svg height="30" width="10">
+                  <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                  <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+              </div>
+              <div class="scrolldown-words">
+                Scroll Down
+              </div>
+            </div>
+            <img src="assets/images/Mention-amico.svg" class="" alt="">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="icon-close"></i></span>
+            </button>
+          </div>
+          <div class="modal-header">
+            <h2 class="modal-title" id="ussdModalLongTitle">Interactive USSD</h2>
+          </div>
+
+          <div class="modal-body">
+            <p style="font-weight: 500; line-height: 32px;">
+
+              USSD allows interactive, 2-way communication between
+              subscribers and applications. USSD can be use for user
+              registration, payment platform and consumer promotion.
+              <br>
+              <br>
+
+              <strong style="font-weight: 700;">You have the option of choosing between two options namely:</strong>
+
+              <br>
+
+              <strong style="font-weight: 700; color: #9d4400;"><i class="icon-check" style="margin-right: 5px;"></i>
+                Shared USSD - used by
+                multiple
+                businesses or
+                brands
+              </strong>
+
+              <br>
+
+              <strong style="font-weight: 700; color: #9d4400;"><i class="icon-check" style="margin-right: 5px;"></i>
+                Dedicated USSD - used only by a
+                single business
+                or brand.</strong>
+
+              <br>
+
+              <br>
+
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="whatsapp-business.html" data-aos="" data-aos-delay="1200"
+              onclick="window.location.href='ussd.html'"
+              class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Visit Interactive USSD page<i
+                class="icon-arrow-right-circle"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Modal, WhatsApp Business start-->
+
+    <div class="modal fade" id="modalWhatsAppBusiness" tabindex="-1" role="dialog"
+      aria-labelledby="whatsAppBusinessModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-custom" role="document">
+        <div class="modal-content">
+          <div class="modal-image">
+            <div class="scrolldown-wrapper">
+              <div class="scrolldown">
+                <svg height="30" width="10">
+                  <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                  <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+              </div>
+              <div class="scrolldown-words">
+                Scroll Down
+              </div>
+            </div>
+            <img src="assets/images/Mention-amico.svg" class="" alt="">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="icon-close"></i></span>
+            </button>
+          </div>
+          <div class="modal-header">
+            <h2 class="modal-title" id="whatsAppBusinessModalLongTitle">WhatsApp Business</h2>
+          </div>
+
+          <div class="modal-body">
+            <p style="font-weight: 500; line-height: 32px;">
+
+              Using WhatsApp Business API for your business messaging opens the door for better
+              communication – leading to better customer engagement, increased trust, and long-
+              term customer relationships. Your customers would always prefer to send you a
+              message over WhatsApp rather than calling a helpdesk number or raising a ticket.
+              <br>
+              <br>
+              Our team of experts help you build and introduce a chatbot to your clients over
+              WhatsApp so you can answer FAQs faster, offload work from your client support team,
+              and deliver a seamless customer experience.
+              <br>
+              <br>
+              Chatbot or live agent enables you to send real-time alerts and notifications while
+              offering always-on support.
+
+              <br>
+              <br>
+              <strong style="font-weight: 700;">Our Platform is:</strong>
+
+              <br>
+
+              <strong style="font-weight: 700; color: #9d4400;"><i class="icon-check" style="margin-right: 5px;"></i>
+                Secure - End-to-end
+                encrypted messaging
+                that keeps
+                information safe.
+              </strong>
+
+              <br>
+
+              <strong style="font-weight: 700; color: #9d4400;"><i class="icon-check" style="margin-right: 5px;"></i>
+                Engaging - Real-time
+                conversations that
+                increase delivery,
+                open, and conversion
+                rates.</strong>
+
+              <br>
+
+              <strong style="font-weight: 700; color: #9d4400;"><i class="icon-check" style="margin-right: 5px;"></i>
+                Reliable - We offer 24/7 support
+                and channel failover
+                to ensure message
+                delivery.</strong>
+
+              <br>
+
+              <br>
+
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="bulk-sms.html" data-aos="" data-aos-delay="1200"
+              onclick="window.location.href='whatsapp-business.html'"
+              class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Visit WhatsApp Business page<i
+                class="icon-arrow-right-circle"></i></a>
           </div>
         </div>
       </div>
@@ -448,9 +676,9 @@
     <div class="container">
       <div class="row text-center intro">
         <div class="col-12">
-          <span class="sub-item-title">IMPORTANT DOWNLOAD FOR DEVELOPERS</span>
+          <span class="sub-item-title">IMPORTANT DOWNLOAD - AUTHORIZATION LETTER</span>
           <h2>Feature Download</h2>
-          <p class="text-max-800">Click the download button bellow to get access to useful information.</p>
+          <p class="text-max-800">Click the download button bellow to download the authorization letter.</p>
         </div>
       </div>
       <div class="swiper-slide slide-center">
@@ -466,9 +694,10 @@
                   click the Download something to download something else.</p>
               </div>
               <div class="mx-auto" style="margin-bottom: 38px;">
-                <button href="https://bulk.bongatech.co.ke/docs/1.0/overview"
-                  class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button-rogue">Download Documentation<i
-                    class="icon-docs""></i></button>
+                <button href="download\Authorization Letter sample.docx"
+                  onclick="window.open('Authorization Letter sample.docx')"
+                  class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button-rogue">Download Letter<i
+                    class="icon-doc""></i></button>
             </div>
            
           </div>
@@ -813,7 +1042,7 @@
         <div class="col-12 col-md-4 col-lg-4 item">
           <div class="card featured"> <i class="icon icon-call-in"></i>
             <div class="hover-overlay-box"></div>
-            <h4>+254 20 210 0835</h4>
+            <h4>+254 724 119360</h4>
             <p>Call us via phone</p>
           </div>
         </div>
@@ -980,7 +1209,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-12 p-3 text-center text-lg-center">
-            <p>Copyright © 2020 All Rights Reserved.</p>
+            <p>Copyright © <span id="copyright-year">2020</span>. All Rights Reserved.</p>
           </div>
         </div>
       </div>
@@ -1084,13 +1313,13 @@
     });
   </script>
 
-<script>
-  //When the modal revel button is clicked
-  function scrollMagic(){
-    $('.scrolldown-wrapper').delay(500).fadeIn('slow', function(){
-         $('.scrolldown-wrapper').delay(2500).fadeOut(); 
+  <script>
+    //When the modal revel button is clicked
+    function scrollMagic() {
+      $('.scrolldown-wrapper').delay(500).fadeIn('slow', function () {
+        $('.scrolldown-wrapper').delay(2500).fadeOut();
       });
-  }
+    }
   </script>
 
   <!--Cookie Concent-->
@@ -1114,6 +1343,9 @@
         "href": "bongatech.co.ke"
       }
     });
+  </script>
+  <script>
+    document.querySelector('#copyright-year').innerText = new Date().getFullYear();
   </script>
 </body>
 
