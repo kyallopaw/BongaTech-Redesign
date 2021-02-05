@@ -176,9 +176,12 @@ jQuery(function ($) {
     })
 
     var midSlider = new Swiper('.slider-mid', {
-        autoplay: false,
+        autoplay: {
+            delay: 5000,
+        },
         loop: true,
         slidesPerView: 1,
+        allowTouchMove: true,
         spaceBetween: 30,
         breakpoints: {
             767: {
