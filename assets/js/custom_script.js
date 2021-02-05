@@ -200,8 +200,8 @@ jQuery(function ($) {
     })
 
     var minSlider = new Swiper('.slider-min', {
-        autoplay: false,
-        loop: false,
+        autoplay: true,
+        loop: true,
         slidesPerView: 1,
         spaceBetween: 1,
         breakpoints: {
