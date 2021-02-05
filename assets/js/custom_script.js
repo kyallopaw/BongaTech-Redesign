@@ -214,11 +214,11 @@ jQuery(function ($) {
                 spaceBetween: 15
             },
             1023: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 150
             },
             1199: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 150
             }
         },
