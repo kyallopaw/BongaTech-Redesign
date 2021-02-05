@@ -200,28 +200,26 @@ jQuery(function ($) {
     })
 
     var minSlider = new Swiper('.slider-min', {
-        autoplay: {
-            delay: 5000,
-        },
-        loop: true,
-        slidesPerView: 2,
-        spaceBetween: 15,
+        autoplay: false,
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 1,
         breakpoints: {
             424: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 15
             },
             767: {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 15
             },
             1023: {
-                slidesPerView: 4,
-                spaceBetween: 15
+                slidesPerView: 3,
+                spaceBetween: 150
             },
             1199: {
-                slidesPerView: 5,
-                spaceBetween: 15
+                slidesPerView: 3,
+                spaceBetween: 150
             }
         },
         pagination: false,
