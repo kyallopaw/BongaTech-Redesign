@@ -916,6 +916,22 @@ aside {
 	color: #000000;
 }
 
+.subtle-card {
+	background: #e2e2e2;
+	border-radius: 8px;
+}
+.subtle-cardcontainer{
+	padding: 22px 28px;
+	padding-bottom: 22px;
+}
+
+@media (max-width:768px) {
+	.subtle-cardcontainer{
+		padding: 22px 5px;
+		padding-bottom: 14px;
+	}
+}
+
 .resume-items .item .card-body {
 	padding: 0;
 }
@@ -984,11 +1000,11 @@ aside {
 	width: 100%;
 }
 
-.download-image-files{
+.download-image-files {
 	position: absolute;
-    left: 650px;
-    bottom: -70px;
-    width: 600px;
+	left: 650px;
+	bottom: -70px;
+	width: 600px;
 }
 
 @media (min-width:768px) {
@@ -2771,7 +2787,6 @@ header .navbar-expand .navbar-nav li.nav-item .dropdown:last-child, header .navb
 	transition-duration: 0.4s;
 	transition-property: opacity, transform;
 }
-
 
 #services .card i.icon {
 	margin-top: 0.5rem

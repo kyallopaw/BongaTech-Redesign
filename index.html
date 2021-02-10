@@ -31,6 +31,17 @@
       width: 100%;
       /* The width is the width of the web page */
     }
+
+    @media (max-width:768px) {
+      .modal-body {
+        align-items: center;
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+      .modal-header{
+        padding-left: 22px;
+      }
+    }
   </style>
 
   <!--Theme Color Settings-->
@@ -103,7 +114,8 @@
 
             </ul>
           </li>
-          <!-- <li class="nav-item"><a href="#team" class="nav-link smooth-anchor">Buy SMS Credit Units</a></li> -->
+          <li class="nav-item"><a href="#" data-toggle="modal" data-target="#modalDownloads"
+              class="nav-link smooth-anchor">Downloads</a></li>
           <li class="nav-item"><a href="#about" class="nav-link smooth-anchor">About Us</a></li>
         </ul>
         <ul class="navbar-nav action">
@@ -247,6 +259,87 @@
     </div>
 
     <!--Modals-->
+
+    <!--Modal, Downloads-->
+
+    <div class="modal fade" id="modalDownloads" tabindex="-1" role="dialog" aria-labelledby="downloadsModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-custom" role="document">
+        <div class="modal-content">
+          <div class="modal-image">
+            <div class="scrolldown-wrapper">
+              <div class="scrolldown">
+                <svg height="30" width="10">
+                  <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                  <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+              </div>
+              <!-- <div class="scrolldown-words">
+                <span>Scroll Down</span>
+              </div> -->
+            </div>
+            <!-- <img src="assets/images/Invoice-amico.svg" class="" alt=""> -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="icon-close"></i></span>
+            </button>
+          </div>
+
+          <div class="modal-header">
+            <h2 class="modal-title" id="downloadsModalLongTitle">Downloads</h2>
+          </div>
+          <div class="modal-body">
+            <div class="subtle-card">
+              <div class="subtle-cardcontainer">
+                <div class="row">
+                  <div class="col-sm-9 col-md-9 col-lg-9">
+                    <h4 style="margin-top: 2px !important; margin-bottom: 2px; !important">Authorization Letter</h4>
+                    <p style="font-weight: 500; line-height: 32px;">
+                      This is a short description about what you are about to download
+                    </p>
+                  </div>
+                  <div class="col-sm-3 col-md-3 col-lg-3 align-self-center"
+                    style="margin-top: 12px; margin-bottom: 12px;">
+                    <a href="bulk-sms.html" data-aos="" data-aos-delay="1200"
+                      onclick="window.open('Authorization Letter sample.docx')"
+                      class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Download<i
+                        class="icon-doc"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="subtle-card" style="margin-bottom: 28px;">
+              <div class="subtle-cardcontainer">
+                <div class="row">
+                  <div class="col-sm-9 col-md-9 col-lg-9">
+                    <h4 style="margin-top: 2px !important; margin-bottom: 2px; !important">User Portal Manual</h4>
+                    <p style="font-weight: 500; line-height: 32px;">
+                      This is a short description about what you are about to download
+                    </p>
+                  </div>
+                  <div class="col-sm-3 col-md-3 col-lg-3 align-self-center"
+                    style="margin-top: 12px; margin-bottom: 12px;">
+                    <a href="bulk-sms.html" data-aos="" data-aos-delay="1200"
+                      onclick="window.open('User Portal Manual.pdf')"
+                      class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Download<i
+                        class="icon-arrow-down-circle"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <a href="bulk-sms.html" data-aos="" data-aos-delay="1200"
+              onclick="window.location.href='mpesa-integration.html'"
+              class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Visit Bulk SMS page<i
+                class="icon-arrow-right-circle"></i></a> -->
+        </div>
+      </div>
+    </div>
+    </div>
+
 
 
     <!--Modal, M-Pesa Integration and Bulk Payments-->
@@ -672,7 +765,7 @@
 
   <!--Download Item Section-->
 
-  <section id="download" class="offers featured item-left-shape">
+  <!-- <section id="download" class="offers featured item-left-shape">
     <div class="container">
       <div class="row text-center intro">
         <div class="col-12">
@@ -685,9 +778,9 @@
         <div class="slider-content row">
           <div class="col-xl-6 col-lg-6 col-md-6 inner">
             <div class="card justify-content-center">
-              <!-- <div class="card-header-rogue">
+              <div class="card-header-rogue">
               Download developer documentation
-            </div> -->
+            </div>
               <div class="card-body-rogue">
                 <p>Click the <strong>"Download Developer Documentation"</strong> below to get started with BongaTech's
                   API. Alternatively,
@@ -709,7 +802,7 @@
           </div>
 
         </div>
-  </section>
+  </section> -->
 
   <!--End Download Item-->
 
@@ -975,14 +1068,15 @@
       <div class="col-12 col-sm-12">
         <div class="swiper-container slider-min">
           <div class="swiper-wrapper align-items-center d-flex">
-            <div class="swiper-slide slide-center"><a href="https://www.airtelkenya.com/"><img src="assets/images/method-draw-image (4).svg"
-                  class="fit-image w-100" alt="Airtel Kenya"></a></div>
-            <div class="swiper-slide slide-center item"><a href="http://www.safaricom.co.ke"><img src="assets/images/method-draw-image (3).svg"
-                  class="fit-image w-100" alt="Safaricom PLC"></a></div>
+            <div class="swiper-slide slide-center"><a href="https://www.airtelkenya.com/"><img
+                  src="assets/images/method-draw-image (4).svg" class="fit-image w-100" alt="Airtel Kenya"></a></div>
+            <div class="swiper-slide slide-center item"><a href="http://www.safaricom.co.ke"><img
+                  src="assets/images/method-draw-image (3).svg" class="fit-image w-100" alt="Safaricom PLC"></a></div>
             <div class="swiper-slide slide-center item"><a href="https://jtl.co.ke/"><img src="assets/images/faiba.svg"
                   class="fit-image w-100" alt="Faiba JTL"></a></div>
-            <div class="swiper-slide slide-center item"><a href="https://ca.go.ke/"><img src="assets/images/cak-logo.svg"
-                  class="fit-image w-100" alt="Communications Authority of Kenya"></a></div>
+            <div class="swiper-slide slide-center item"><a href="https://ca.go.ke/"><img
+                  src="assets/images/cak-logo.svg" class="fit-image w-100" alt="Communications Authority of Kenya"></a>
+            </div>
           </div>
         </div>
       </div>
