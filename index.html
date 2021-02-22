@@ -23,6 +23,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
     rel="stylesheet">
 
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
   <style type="text/css">
     /* Set the size of the div element that contains the map */
     #map {
@@ -38,7 +42,8 @@
         padding-left: 22px;
         padding-right: 22px;
       }
-      .modal-header{
+
+      .modal-header {
         padding-left: 22px;
       }
     }
@@ -73,7 +78,6 @@
 </head>
 
 <body>
-
   <!-- Header -->
   <header>
     <!-- Navbar -->
@@ -89,27 +93,28 @@
         <!-- Navbar Items -->
         <ul class="navbar-nav items ml-auto">
 
-          <!-- <li class="nav-item"><a href="#slider" class="nav-link smooth-anchor">Home</a></li> -->
+          <li class="nav-item"><a href="#slider" class="nav-link smooth-anchor">Home</a></li>
 
-          <li class="nav-item"><a href="#blog" class="nav-link smooth-anchor">Send Bulk SMS</a></li>
+          <li class="nav-item"><a href="http://bulk.bongatech.com" target="_blank" onclick="parent.location='http://bulk.bongatech.com'; return false;" class="nav-link smooth-anchor">Send Bulk SMS</a></li>
 
           <li class="nav-item dropdown"><a href="#services" class="nav-link active">Understand Our Services<i
                 class="icon-arrow-down"></i></a>
             <ul class="dropdown-menu">
 
-              <li class="nav-item dropdown"> <a class="nav-link" href="bulk-sms.html"> Bulk SMS <i
-                    class="icon-screen-desktop"></i></a></li>
+              <li class="nav-item dropdown"> <a class="nav-link" href="bulk-sms.html"> Bulk SMS <i class="far fa-comment-dots"></i></a></li>
               <li class="nav-item dropdown"> <a class="nav-link" href="mpesa-integration.html"> M-Pesa Integration<i
                     class="icon-credit-card"></i></a> </li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="short-code.html">Short Codes <i
-                    class="icon-key"></i></a></li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="">SMS Integration<i class="icon-phone"></i></a>
+              <li class="nav-item dropdown"> <a class="nav-link" href="short-code.html">Short Codes <i class="fas fa-list-ol"></i></a></li>
+              <li class="nav-item dropdown"> <a class="nav-link" href="whatsapp-business.html">Whatsspp Business<i class="fab fa-whatsapp"></i></a>
               </li>
               <li class="nav-item dropdown"> <a class="nav-link" href="ussd.html">USSD<i
                     class="icon-screen-smartphone"></i></a>
               </li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="#">Surveys<i class="icon-notebook"></i></a></li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="#">Loyalty Programs<i class="icon-badge"></i></a>
+              <li class="nav-item dropdown"> <a class="nav-link" href="#" data-toggle="modal"
+                  data-target="#modalSurvey" onclick="scrollMagic()">Surveys<i class="icon-notebook"></i></a></li>
+      
+              <li class="nav-item dropdown"> <a class="nav-link" href="#" data-toggle="modal"
+                data-target="#modalLoyaltyPrograms" onclick="scrollMagic()">Loyalty Programs<i class="icon-badge"></i></a>
               </li>
 
             </ul>
@@ -149,15 +154,16 @@
                   <h1><span class="typed-words"></span><br>Bulk SMS</h1>
                   <!-- <h2 class="title effect-static-text my-0">Bulk SMS Provider</h2> -->
 
-                  <p data-aos="" data-aos-delay="0" class="description full-slider-text-dark">Deliver
-                    messages from your computer or server quickly and easily, through
-                    the world’s largest SMS messaging network.</p>
+                  <p data-aos="" data-aos-delay="0" class="description full-slider-text-dark">Send messages from your
+                    phone, computer
+                    and server faster and reliably through the best and largest SMS messaging platform.
+                  </p>
                   <div class="intro-btn-item">
-                    <a href="https://bulk.bongatech.co.ke/docs/1.0/overview" data-aos="" data-aos-delay="1200"
-                      class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button">View Developer API<i
-                        class="icon-settings"></i></a>
-                    <a href="https://bulk.bongatech.co.ke/login" data-aos="" data-aos-delay="1200"
-                      class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button">Enter The Bulk Portal <i
+                    <a href="https://bulk.bongatech.co.ke/"  onclick="parent.location='http://bulk.bongatech.com'; return false;" data-aos="" data-aos-delay="1200"
+                      class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button">New Bulk Portal<i
+                        class="icon-arrow-right-circle"></i></a>
+                    <a href="https://bulk.bongatech.co.ke/login"  onclick="parent.location='http://bulk.bizsms.co.ke'; return false;" data-aos="" data-aos-delay="1200"
+                      class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button">Old Bulk Portal <i
                         class="icon-arrow-right-circle"></i></a>
                   </div>
                 </div>
@@ -196,7 +202,7 @@
       <div class="row justify-content-center text-center items">
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
           <div class="card">
-            <i class="icon icon-screen-desktop"></i>
+            <i class="icon far fa-comment-dots"></i>
             <h4>Bulk SMS</h4>
             <p>Deliver messages from your computer or server quickly and easily, through the world’s largest SMS
               messaging network</p>
@@ -208,51 +214,51 @@
           <div class="card">
             <i class="icon icon-credit-card"></i>
             <h4>M-Banking, Bulk Payments</h4>
-            <br>
-            <p>Perform surveys, campaigns and mobile banking transactions easily on your phone.</p>
+            <p>Conduct surveys, campaigns and mobile banking transactions efficiently on your phone.</p>
             <a href="" data-toggle="modal" data-target="#modalBanking" onclick="scrollMagic()"><span>Learn More</span>
-              <i class="btn-icon icon-arrow-right-circle"></i></a>
+              <i class="btn-icon icon-plus"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
           <div class="card">
-            <i class="icon icon-key"></i>
+            <i class="icon fas fa-list-ol"></i>
             <h4>Short Codes</h4>
-            <br>
-            <p>Send a two-way message to your clients through our unique short code application.</p>
+            <p>Thorugh our unique short code service, you can send a two-way message to your clients. Apply for one
+              today.</p>
             <a href="" data-toggle="modal" data-target="#modalShortcodes" onclick="scrollMagic()"><span>Learn
-                More</span> <i class="btn-icon icon-arrow-right-circle"></i></a>
+                More</span> <i class="btn-icon icon-plus"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
           <div class="card">
-            <i class="icon icon-badge"></i>
+            <i class="icon fab fa-whatsapp"></i>
             <h4>WhatApp Business</h4>
-            <p>Better communication for customer engagement, increased trust, and long-term customer relationships.
+            <br>
+            <p>Stay in communication by engaging with your customers online.
             </p>
             <a href="" data-toggle="modal" data-target="#modalWhatsAppBusiness" onclick="scrollMagic()"><span>Learn
                 More</span>
-              <i class="btn-icon icon-arrow-right-circle"></i></a>
+                <i class="btn-icon icon-plus"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
           <div class="card">
             <i class="icon icon-screen-smartphone"></i>
             <h4>USSD Interactive</h4>
-            <br>
-            <p>A standard session-based GSM technology which supports longer message content.</p>
+            <p>Its is a fast, two-way communication that is customizable making it ideal for you to run your business.
+            </p>
             <a href="" data-toggle="modal" data-target="#modalUssd" onclick="scrollMagic()"><span>Learn More</span>
-              <i class="btn-icon icon-arrow-right-circle"></i></a>
+              <i class="btn-icon icon-plus"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
           <div class="card">
-            <i class="icon icon-user"></i>
+            <i class="icon icon-notebook"></i>
             <h4>Surveys</h4>
             <br>
             <p>Improve your service delivery and get real-time insights.</p>
             <a href="" data-toggle="modal" data-target="#modalSurvey" onclick="scrollMagic()"><span>Learn More</span>
-              <i class="btn-icon icon-arrow-right-circle"></i></a>
+              <i class="btn-icon icon-plus"></i></a>
           </div>
         </div>
       </div>
@@ -292,14 +298,14 @@
               <div class="subtle-cardcontainer">
                 <div class="row">
                   <div class="col-sm-9 col-md-9 col-lg-9">
-                    <h4 style="margin-top: 2px !important; margin-bottom: 2px; !important">Authorization Letter</h4>
+                    <h4 style="margin-top: 2px !important; margin-bottom: 2px;!important">Authorization Letter</h4>
                     <p style="font-weight: 500; line-height: 32px;">
                       This is a short description about what you are about to download
                     </p>
                   </div>
                   <div class="col-sm-3 col-md-3 col-lg-3 align-self-center"
                     style="margin-top: 12px; margin-bottom: 12px;">
-                    <a href="bulk-sms.html" data-aos="" data-aos-delay="1200"
+                    <a href="bulk-sms.html" target="_blank" data-aos="" data-aos-delay="1200"
                       onclick="window.open('Authorization Letter sample.docx')"
                       class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Download<i
                         class="icon-doc"></i></a>
@@ -761,6 +767,56 @@
       </div>
     </div>
 
+    <!--Modal, WhatsApp Business start-->
+
+    <div class="modal fade" id="modalLoyaltyPrograms" tabindex="-1" role="dialog"
+      aria-labelledby="loyaltyProgramsModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-custom" role="document">
+        <div class="modal-content">
+          <div class="modal-image">
+            <div class="scrolldown-wrapper">
+              <div class="scrolldown">
+                <svg height="30" width="10">
+                  <circle class="scrolldown-p1" cx="5" cy="15" r="2" />
+                  <circle class="scrolldown-p2" cx="5" cy="15" r="2" />
+                </svg>
+              </div>
+              <div class="scrolldown-words">
+                Scroll Down
+              </div>
+            </div>
+            <img src="assets/images/Discount-amico.svg" class="" alt="">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="icon-close"></i></span>
+            </button>
+          </div>
+          <div class="modal-header">
+            <h2 class="modal-title" id="whatsAppBusinessModalLongTitle">Loyalty Programs</h2>
+          </div>
+
+          <div class="modal-body">
+            <p style="font-weight: 500; line-height: 32px;">
+
+              Loyalty programs are structured marketing
+              strategies designed by merchants to encourage
+              your clients to continue shopping or use the
+              services of your business associated with each of
+              our programs.
+              <br>
+              <br>
+              Our customer loyalty program is a structured
+              customer strategy that helps build a stronger
+              relationship between the customer and your
+              brand.
+              <br>
+              <br>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!--Download Item Section-->
@@ -807,7 +863,7 @@
   <!--End Download Item-->
 
 
-  <!-- Features Section -->
+  <!-- M-Pesa Feature Section -->
   <section id="features" class="offers featured item-left-shape">
     <div class="container">
       <div class="row text-center intro">
@@ -999,22 +1055,22 @@
                   </a>
                   <p>
                     <strong style="font-weight: 700;"><i class="icon-check" style="margin-right: 5px;"></i>
-                      Excellence</strong>
+                      Customer service</strong>
                     <br>
                     <strong style="font-weight: 700;"><i class="icon-check" style="margin-right: 5px;"></i>
-                      Intellectual Honesty
+                      Innovative
                     </strong>
                     <br>
                     <strong style="font-weight: 700;"><i class="icon-check" style="margin-right: 5px;"></i>
-                      Respect & Trust
+                      Qouality delivery
                     </strong>
                     <br>
                     <strong style="font-weight: 700;"><i class="icon-check" style="margin-right: 5px;"></i>
-                      Creativity
+                      Integrity
                     </strong>
                     <br>
                     <strong style="font-weight: 700;"><i class="icon-check" style="margin-right: 5px;"></i>
-                      High Focus
+                      Respect and high Focus
                     </strong>
                   </p>
                 </div>
@@ -1196,20 +1252,20 @@
             <h4>This is BongaTech</h4>
             <p>What you see and what you get is a user friendly, no-frills service, but behind it
               is a complex platform tuned to specific client needs.</p>
-            <ul class="navbar-nav social share-list mt-0 ml-auto">
+            <!-- <ul class="navbar-nav social share-list mt-0 ml-auto">
               <li class="nav-item"><a href="#" class="nav-link"><i class="icon-social-facebook"></i></a></li>
               <li class="nav-item"><a href="#" class="nav-link"><i class="icon-social-linkedin"></i></a></li>
               <li class="nav-item"><a href="#" class="nav-link"><i class="icon-social-twitter"></i></a></li>
               <li class="nav-item"><a href="#" class="nav-link"><i class="icon-social-instagram"></i></a></li>
               <li class="nav-item"><a href="#" class="nav-link"><i class="icon-social-skype"></i></a></li>
-            </ul>
+            </ul> -->
           </div>
           <div class="col-12 col-lg-2 col-sm-6 col-xs-6 p-3 text-left">
             <h4>Useful Links</h4>
             <ul class="navbar-nav fb-nav-link">
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> About Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Contact Us</a></li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Our Services</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link"><i class="icon-arrow-right"></i> About Us</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link"><i class="icon-arrow-right"></i> Contact Us</a></li>
+              <li class="nav-item"><a href="#services" class="nav-link"><i class="icon-arrow-right"></i> Our Services</a></li>
               <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Terms and
                   Conditions</a>
               </li>
@@ -1219,17 +1275,17 @@
           <div class="col-12 col-lg-2 col-sm-6 col-xs-6 p-3 text-left">
             <h4>Our Service</h4>
             <ul class="navbar-nav fb-nav-link">
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Bulk SMS</a></li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> M-Pesa Integration</a>
+              <li class="nav-item"><a href="bulk-sms.html" class="nav-link"><i class="icon-arrow-right"></i> Bulk SMS</a></li>
+              <li class="nav-item"><a href="mpesa-integration.html" class="nav-link"><i class="icon-arrow-right"></i> M-Pesa Integration</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Bulk Payments</a></li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Short Codes</a></li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> SMS Integration</a>
-              </li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> USSD</a></li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Surveys</a></li>
+              <li class="nav-item"><a href="mpesa-integration.html" class="nav-link"><i class="icon-arrow-right"></i> Bulk Payments</a></li>
+              <li class="nav-item"><a href="short-code.html" class="nav-link"><i class="icon-arrow-right"></i> Short Codes</a></li>
+              <!-- <li class="nav-item"><a href="" class="nav-link"><i class="icon-arrow-right"></i> SMS Integration</a>
+              </li> -->
+              <li class="nav-item"><a href="ussd.html" class="nav-link"><i class="icon-arrow-right"></i> USSD</a></li>
+              <!-- <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Surveys</a></li>
               <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Loyalty Programs</a>
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="col-12 col-lg-3 col-sm-6 col-xs-6 p-3 text-left">
