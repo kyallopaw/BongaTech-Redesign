@@ -9,7 +9,16 @@
   <title>BongaTech</title>
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="assets/images/favicon.png">
+  <link rel="icon" type='image/x-icon' href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#d6040b">
+<link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
 
   <!--Stylesheet-->
   <link rel="stylesheet" href="assets/css/stylesheet-main.css">
@@ -95,26 +104,32 @@
 
           <li class="nav-item"><a href="#slider" class="nav-link smooth-anchor">Home</a></li>
 
-          <li class="nav-item"><a href="http://bulk.bongatech.com" target="_blank" onclick="parent.location='http://bulk.bongatech.com'; return false;" class="nav-link smooth-anchor">Send Bulk SMS</a></li>
+          <li class="nav-item"><a href="http://bulk.bongatech.com" target="_blank"
+              onclick="parent.location='http://bulk.bongatech.com'; return false;" class="nav-link smooth-anchor">Send
+              Bulk SMS</a></li>
 
           <li class="nav-item dropdown"><a href="#services" class="nav-link active">Understand Our Services<i
                 class="icon-arrow-down"></i></a>
             <ul class="dropdown-menu">
 
-              <li class="nav-item dropdown"> <a class="nav-link" href="bulk-sms.html"> Bulk SMS <i class="far fa-comment-dots"></i></a></li>
+              <li class="nav-item dropdown"> <a class="nav-link" href="bulk-sms.html"> Bulk SMS <i
+                    class="far fa-comment-dots"></i></a></li>
               <li class="nav-item dropdown"> <a class="nav-link" href="mpesa-integration.html"> M-Pesa Integration<i
                     class="icon-credit-card"></i></a> </li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="short-code.html">Short Codes <i class="fas fa-list-ol"></i></a></li>
-              <li class="nav-item dropdown"> <a class="nav-link" href="whatsapp-business.html">Whatsspp Business<i class="fab fa-whatsapp"></i></a>
+              <li class="nav-item dropdown"> <a class="nav-link" href="short-code.html">Short Codes <i
+                    class="fas fa-list-ol"></i></a></li>
+              <li class="nav-item dropdown"> <a class="nav-link" href="whatsapp-business.html">Whatsspp Business<i
+                    class="fab fa-whatsapp"></i></a>
               </li>
               <li class="nav-item dropdown"> <a class="nav-link" href="ussd.html">USSD<i
                     class="icon-screen-smartphone"></i></a>
               </li>
+              <li class="nav-item dropdown"> <a class="nav-link" href="#" data-toggle="modal" data-target="#modalSurvey"
+                  onclick="scrollMagic()">Surveys<i class="icon-notebook"></i></a></li>
+
               <li class="nav-item dropdown"> <a class="nav-link" href="#" data-toggle="modal"
-                  data-target="#modalSurvey" onclick="scrollMagic()">Surveys<i class="icon-notebook"></i></a></li>
-      
-              <li class="nav-item dropdown"> <a class="nav-link" href="#" data-toggle="modal"
-                data-target="#modalLoyaltyPrograms" onclick="scrollMagic()">Loyalty Programs<i class="icon-badge"></i></a>
+                  data-target="#modalLoyaltyPrograms" onclick="scrollMagic()">Loyalty Programs<i
+                    class="icon-badge"></i></a>
               </li>
 
             </ul>
@@ -159,12 +174,14 @@
                     and server faster and reliably through the best and largest SMS messaging platform.
                   </p>
                   <div class="intro-btn-item">
-                    <a href="https://bulk.bongatech.co.ke/"  onclick="parent.location='http://bulk.bongatech.com'; return false;" data-aos="" data-aos-delay="1200"
-                      class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button">New Bulk Portal<i
-                        class="icon-arrow-right-circle"></i></a>
-                    <a href="https://bulk.bongatech.co.ke/login"  onclick="parent.location='http://bulk.bizsms.co.ke'; return false;" data-aos="" data-aos-delay="1200"
-                      class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button">Old Bulk Portal <i
-                        class="icon-arrow-right-circle"></i></a>
+                    <a href="https://bulk.bongatech.co.ke/"
+                      onclick="parent.location='http://bulk.bongatech.com'; return false;" data-aos=""
+                      data-aos-delay="1200" class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button">New
+                      Bulk Portal<i class="icon-arrow-right-circle"></i></a>
+                    <a href="https://bulk.bongatech.co.ke/login"
+                      onclick="parent.location='http://bulk.bizsms.co.ke'; return false;" data-aos=""
+                      data-aos-delay="1200" class="smooth-anchor ml-auto mr-auto ml-md-0 mt-4 btn primary-button">Old
+                      Bulk Portal <i class="icon-arrow-right-circle"></i></a>
                   </div>
                 </div>
               </div>
@@ -238,7 +255,7 @@
             </p>
             <a href="" data-toggle="modal" data-target="#modalWhatsAppBusiness" onclick="scrollMagic()"><span>Learn
                 More</span>
-                <i class="btn-icon icon-plus"></i></a>
+              <i class="btn-icon icon-plus"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 col-sm-6 col-xs-12 item">
@@ -416,8 +433,8 @@
           <div class="modal-footer">
             <a href="bulk-sms.html" data-aos="" data-aos-delay="1200"
               onclick="window.location.href='mpesa-integration.html'"
-              class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Visit M-Pesa Integration page<i
-                class="icon-arrow-right-circle"></i></a>
+              class="smooth-anchor ml-auto mr-auto ml-md-auto mt-auto btn primary-button">Visit M-Pesa Integration
+              page<i class="icon-arrow-right-circle"></i></a>
           </div>
         </div>
       </div>
@@ -1264,22 +1281,28 @@
             <h4>Useful Links</h4>
             <ul class="navbar-nav fb-nav-link">
               <li class="nav-item"><a href="#about" class="nav-link"><i class="icon-arrow-right"></i> About Us</a></li>
-              <li class="nav-item"><a href="#contact" class="nav-link"><i class="icon-arrow-right"></i> Contact Us</a></li>
-              <li class="nav-item"><a href="#services" class="nav-link"><i class="icon-arrow-right"></i> Our Services</a></li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Terms and
+              <li class="nav-item"><a href="#contact" class="nav-link"><i class="icon-arrow-right"></i> Contact Us</a>
+              </li>
+              <li class="nav-item"><a href="#services" class="nav-link"><i class="icon-arrow-right"></i> Our
+                  Services</a></li>
+              <!-- <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Terms and
                   Conditions</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Privacy Policy</a></li>
+              <li class="nav-item"><a href="#" class="nav-link"><i class="icon-arrow-right"></i> Privacy Policy</a></li> -->
             </ul>
           </div>
           <div class="col-12 col-lg-2 col-sm-6 col-xs-6 p-3 text-left">
             <h4>Our Service</h4>
             <ul class="navbar-nav fb-nav-link">
-              <li class="nav-item"><a href="bulk-sms.html" class="nav-link"><i class="icon-arrow-right"></i> Bulk SMS</a></li>
-              <li class="nav-item"><a href="mpesa-integration.html" class="nav-link"><i class="icon-arrow-right"></i> M-Pesa Integration</a>
+              <li class="nav-item"><a href="bulk-sms.html" class="nav-link"><i class="icon-arrow-right"></i> Bulk
+                  SMS</a></li>
+              <li class="nav-item"><a href="mpesa-integration.html" class="nav-link"><i class="icon-arrow-right"></i>
+                  M-Pesa Integration</a>
               </li>
-              <li class="nav-item"><a href="mpesa-integration.html" class="nav-link"><i class="icon-arrow-right"></i> Bulk Payments</a></li>
-              <li class="nav-item"><a href="short-code.html" class="nav-link"><i class="icon-arrow-right"></i> Short Codes</a></li>
+              <li class="nav-item"><a href="mpesa-integration.html" class="nav-link"><i class="icon-arrow-right"></i>
+                  Bulk Payments</a></li>
+              <li class="nav-item"><a href="short-code.html" class="nav-link"><i class="icon-arrow-right"></i> Short
+                  Codes</a></li>
               <!-- <li class="nav-item"><a href="" class="nav-link"><i class="icon-arrow-right"></i> SMS Integration</a>
               </li> -->
               <li class="nav-item"><a href="ussd.html" class="nav-link"><i class="icon-arrow-right"></i> USSD</a></li>
@@ -1301,6 +1324,25 @@
               <li class="nav-item"><a href="#" class="nav-link"><i class="icon-location-pin mr-2"></i> Haven Court,
                   Block C, 1st Floor,
                   Westlands, Nairobi Kenya.</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-2 col-sm-6 col-xs-6 p-3 text-left">
+            <h4>Developer API</h4>
+            <ul class="navbar-nav fb-nav-link">
+              <li class="nav-item"><a href="https://bulk.bongatech.co.ke/docs/1.0/overview" class="nav-link">
+                  <i class="icon-arrow-right"></i>Overview</a></li>
+              <li class="nav-item"><a href="https://bulk.bongatech.co.ke/docs/1.0/send-sms" class="nav-link">
+                  <i class="icon-arrow-right"></i>SMS</a></li>
+              <li class="nav-item"><a href="https://bulk.bongatech.co.ke/docs/1.0/send-voice-sms" class="nav-link">
+                  <i class="icon-arrow-right"></i>Voice SMS</a></li>
+              <li class="nav-item"><a href="https://bulk.bongatech.co.ke/docs/1.0/whatsapp/overview" class="nav-link">
+                  <i class="icon-arrow-right"></i>Whatsapp</a></li>
+              <li class="nav-item"><a href="https://bulk.bongatech.co.ke/docs/1.0/smpp-docs" class="nav-link">
+                  <i class="icon-arrow-right"></i>SMPP Docs</a></li>
+              <li class="nav-item"><a href="https://bulk.bongatech.co.ke/docs/1.0/sdk" class="nav-link">
+                  <i class="icon-arrow-right"></i>SDK</a></li>
+              <li class="nav-item"><a href="https://bulk.bongatech.co.ke/docs/1.0/responses" class="nav-link">
+                  <i class="icon-arrow-right"></i>API Responses</a></li>
             </ul>
           </div>
         </div>
@@ -1400,10 +1442,8 @@
   <script src="assets/js/slider.min.js"></script>
   <script src="assets/js/gallery.min.js"></script>
   <script src="assets/js/animation.min.js"></script>
-  <script src="assets/js/particles.min.js"></script>
   <script src="assets/js/typed.js"></script>
   <script src="assets/js/custom_script.js"></script>
-  <script src="assets/js/scroll.js"></script>
   <script>
     var typed = new Typed('.typed-words', {
       strings: ["Reliable", "Secure", "Flexible", "Innovative"],
